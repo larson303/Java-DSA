@@ -25,7 +25,7 @@ public class DsaApplication {
         return args -> {
 
             Scanner scanner = new Scanner(System.in);
-            int choice = 0; // Declare a variable to store the user's choice
+            char choice = 0; // Declare a variable to store the user's choice
             boolean continueLoop = true; // Declare a variable to control the loop
 
             System.out.println("Running the app");
@@ -35,37 +35,37 @@ public class DsaApplication {
                 System.out.println("2 - Linked Lists");
                 System.out.println("3 - Stacks and Queues");
                 System.out.println("4 - Cookies");
-                System.out.println("5 - Exit");
+                System.out.println("X - Exit");
                 System.out.println();
                 System.out.print("Choose what to Review: ");
-                choice = scanner.nextInt();
+                choice = scanner.next().charAt(0);
 
                 switch (choice) {
-                    case 1:
+                    case '1':
                         System.out.println("Creating an array");
                         ArraysReview arraysReview = new ArraysReview();
                         arraysReview.run();
                         System.out.println();
                         break;
-                    case 2:
+                    case '2':
                         System.out.println("Creating a linked list");
                         LinkedListReview linkedListReview = new LinkedListReview();
                         linkedListReview.run();
                         System.out.println();
                         break;
-                    case 3:
+                    case '3':
                         System.out.println("Creating a stack and a queue");
                         StackDequeReview stackDequeReview = new StackDequeReview();
                         stackDequeReview.run();
                         System.out.println();
                         break;
-                    case 4:
+                    case '4':
                         System.out.println("Creating a cookie object");
                         Cookie cookie = new Cookie("chocolate", 100);
                         System.out.println(cookie.toString());
                         System.out.println();
                         break;
-                    case 5:
+                    case 'X' | 'x':
                         System.out.println("Exiting the app");
                         continueLoop = false;
                         break;
