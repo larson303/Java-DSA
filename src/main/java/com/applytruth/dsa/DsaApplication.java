@@ -4,6 +4,7 @@ package com.applytruth.dsa;
 import com.applytruth.dsa.DataStructures.ArraysReview;
 import com.applytruth.dsa.DataStructures.LinkedListReview;
 import com.applytruth.dsa.DataStructures.StackDequeReview;
+import com.applytruth.dsa.Classes.Cookie;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -62,7 +63,10 @@ public class DsaApplication {
                     case '4':
                         System.out.println("Creating a cookie object");
                         Cookie cookie = new Cookie("chocolate", 100);
+                        Cookie cookie2 = new Cookie("macadamia nut", 150);
                         System.out.println(cookie.toString());
+                        System.out.println(cookie2.toString());
+                        System.out.println(cookie.getFlavor());
                         System.out.println();
                         break;
                     case 'X' | 'x':
