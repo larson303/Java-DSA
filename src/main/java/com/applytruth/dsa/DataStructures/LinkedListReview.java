@@ -1,8 +1,10 @@
+package com.applytruth.dsa.DataStructures;
+
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
-public class LinkedListExample {
+public class LinkedListReview {
 
     public void ShowLinkedList() {
         // LinkedList is a class that implements the List interface
@@ -31,5 +33,9 @@ public class LinkedListExample {
         List<String> synchronizedFruits = Collections.synchronizedList(shoppingList);
         System.out.println(synchronizedFruits);
 
+    }
+
+    public void run() {
+        ShowLinkedList();
     }
 }

@@ -1,6 +1,8 @@
+package com.applytruth.dsa.DataStructures;
+
 import java.util.Arrays;
 
-public class ArraysExample {
+public class ArraysReview {
 
     String[] weekdays = new String[7];
 //  System.out.println(Arrays.toString(weekdays));
@@ -27,12 +29,9 @@ public class ArraysExample {
         }
     }
 
-    public int[] incrementArray(int[] numbers) {
-        int[] newNumbers = new int[numbers.length];
-        for(int i = 0; i < numbers.length; i++) {
-            newNumbers[i] = numbers[i] + 1;
-        }
-        return newNumbers;
+    public void run() {
+        setWeekdays();
+        printWeekdays();
     }
 
 }
