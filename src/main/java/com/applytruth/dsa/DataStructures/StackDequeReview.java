@@ -21,9 +21,9 @@ public class StackDequeReview {
         // Prints in LIFO order
         System.out.println(stack);
 
-        System.out.println(stack.peek()); // Third request is on top of the stack
+        System.out.println(" " + stack.peek()); // Third request is on top of the stack
         stack.pop(); // Removes the top element
-        System.out.println(stack); // Second request is on top of the stack
+        System.out.println(" " + stack); // Second request is on top of the stack
 
     }
 

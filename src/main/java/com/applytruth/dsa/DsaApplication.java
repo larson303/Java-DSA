@@ -3,6 +3,7 @@ package com.applytruth.dsa;
 
 import com.applytruth.dsa.DataStructures.ArraysReview;
 import com.applytruth.dsa.DataStructures.LinkedListReview;
+import com.applytruth.dsa.Classes.LinkedListClass;
 import com.applytruth.dsa.DataStructures.StackDequeReview;
 import com.applytruth.dsa.Classes.Cookie;
 import org.springframework.boot.CommandLineRunner;
@@ -11,6 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 
+import java.util.LinkedList;
 import java.util.Scanner;
 
 @SpringBootApplication
@@ -32,11 +34,15 @@ public class DsaApplication {
             System.out.println("Running the app");
             do {
                 System.out.println("Review Options:");
+                System.out.println("----------------------------------------");
                 System.out.println("1 - Arrays");
                 System.out.println("2 - Linked Lists");
                 System.out.println("3 - Stacks and Queues");
                 System.out.println("4 - Cookies");
+                System.out.println("5 - Linked List Class");
+                System.out.println("----------------------------------------");
                 System.out.println("X - Exit");
+                System.out.println("----------------------------------------");
                 System.out.println();
                 System.out.print("Choose what to Review: ");
                 choice = scanner.next().charAt(0);
@@ -69,6 +75,15 @@ public class DsaApplication {
                         System.out.println(cookie.getFlavor());
                         System.out.println();
                         break;
+                    case '5':
+                        System.out.println("Creating a Linked List");
+                        LinkedListClass linkedList = new LinkedListClass(3);
+                        linkedList.append(4);
+                        System.out.println(linkedList.toString());
+                        linkedList.prepend(2);
+                        System.out.println(linkedList.toString());
+                        linkedList.insert(1, 5);
+                        System.out.println(linkedList.toString());
                     case 'X' | 'x':
                         System.out.println("Exiting the app");
                         continueLoop = false;

@@ -25,7 +25,7 @@ public class ArraysReview {
     public void printWeekdays() {
         System.out.println("=====================================");
         for(int i = 0; i < weekdays.length; i++) {
-            System.out.println(weekdays[i]);
+            System.out.println(" " + weekdays[i]);
         }
     }
 
